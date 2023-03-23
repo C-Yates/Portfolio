@@ -217,7 +217,7 @@ c {
 .mail:hover d{
     display: none;
 }
-.code:link {
+.code:link, .code:visited {
     text-decoration: none;
     color: black;
 }
