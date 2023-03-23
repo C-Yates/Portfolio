@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chris Yates</title>
+  <link rel="icon" type="image/x-icon" href="images/Logo1.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' type='text/css' href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <script src="body.js"></script>
+  
+  <style>
+  body {
+    position: relative;
+  }
+  #about        {padding-top:50px;height:auto;}
+  #experience   {padding-top:50px;height:auto;}
+  #skills       {padding-top:50px;height:auto;}
+  #case_study1  {padding-top:50px;height:auto;}
+  #case_study2  {padding-top:50px;height:auto;}
+  #case_study3  {padding-top:50px;height:auto;}
+  #case_study4  {padding-top:50px;height:auto;}
+  #case_study5  {padding-top:50px;height:auto;}
+  #contact      {padding-top:50px;height:auto; background: #b8bec7;}
+  </style>
+</head>
+
+<body>
+<section>
+    <div class="containers">
+        <h2 style="position: relative; top: 400px; text-align: center; text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;">hello.</h2>
+        <canvas class="background"></canvas>
+    </div>
+</section>
+<nav class="navbar navbar-inverse nav" style="position: sticky; top: 0px; z-index: 2; width: auto">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      <a class="navbar-brand" href="#about">Chris Yates</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#case_study1">WCS</a></li>
+              <li><a href="#case_study2">Design Automation</a></li>
+              <li><a href="#case_study3">PageTurner</a></li>
+              <li><a href="#case_study4">Plexus</a></li>
+              <li><a href="#case_study5">Portfolio</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script src="particle.js"></script>
+</body>
+
+<main>
+
+<div id="about" class="container-fluid">
+    <div class="fade-in">
+    <div class="container about">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="head">I'm Chris ✌️</h2>
+                <p class="text">A UK-based <c>software dev</c> with a passion for tech and programming. 
+                    My skills include both front and back end languages, but my specialty lies in <c>Python</c>. 
+                    Over the last <c>5 years</c>, I've honed my expertise and knowledge in developing software applications that are reliable, scalable, and efficient. 
+                    I'm always looking for ways to improve my skills and knowledge to keep up with the ever-evolving world of tech.
+                    Outside of work, I enjoy reading, running and all things games 🎮</p>
+                <p class="text">I'm excited to see what the future of tech holds, and I'm always <c>eager to</c> jump in and <c>learn.</c></p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div id="experience" class="container-fluid">
+    <div class="fade-in">
+    <div class="container experience">
+        <h1>Experience</h1>
+        <ol class="list" style="font-family: var(--font-head);">
+            <li>
+                <h3>0. Nottingham Trent University</h2>
+                <h4 style="color: var(--highlight1)">Student</h4>
+                <h5>2018</h6>
+                <span>
+                    I studied my degree in Mechanical Engineering with the intent to go down a mech-design route. Whilst studying however, I
+                    was opened up to the world of software through C++ and spent the next 3 years dabbling in a mix of course and personal projects.
+                    It was this initial free-time passion that kept the door open to software whilst pursuing my interests in mechanical engineering.
+                </span>
+            </li>
+
+            <li>
+                <h3>1. LAC Conveyors Automation</h2>
+                <h4 style="color: var(--highlight1)">Software Engineer</h4>
+                <h5>2022</h6>
+                <span>
+                    I worked at LAC initially in Design and R&D where I began creating VBA macros to boost productivity saving thousands of man hours.
+                    My programming skills allowed me to automate various aspects of the design process through a combination of the CAD’s API and 
+                    external OOP languages like python.
+                    This vastly cut down the time taken to create and detail models whilst also saving on the need for paid add-on packages.
+                </span>
+            </li>
+
+            <li>
+                <h3>2. Holloway Controls Ltd.</h2>
+                <h4 style="color: var(--highlight1)">Software Developer</h4>
+                <h5>2023</h6>
+                <span>
+                    Currently I work for Holloway as a software dev, primarily on the creation of a Warehouse Control System (WCS) from the ground up.
+                    I use various languages on a daily basis within the Django framework including python, javascript and  Bootstrap.
+                    Between sprints I perform maintenance and UI/UX improvements on LAC's custom-built business management system.
+                </span>
+            </li>
+        </ol>
+    </div>
+    </div>
+</div>
+
+<div id="skills" class="container-fluid">
+    <div class="fade-in">
+    <div class="container skills">
+        <h1>Skills</h1>
+        <ol class="list">
+            <li class="items hover hov1">
+                <h2 class="headline"><c>Front-end:</c> HTML | CSS | Bootstrap | JavaScript</h2>
+                <span class="text">
+                    My front-end capabilities are on display through all of my design applications from data dashboards
+                    to company websites. I strive to produce fresh and interesting front-end solutions to suit the task
+                </span>
+            </li>
+            <li class="items hover hov2">
+                <h2 class="headline"><c>Back-end:</c> Python | Django | C++</h2>
+                <span class="text">
+                    Back-end solutions are my bread and butter being where I first started my foray in programming. I thrive on a challenge
+                    whether it's data-handling, data-manipulation, 'smart' (automation) applications, or websites; get in touch to see
+                    if I can help with your task
+                </span>
+            </li>
+            <li class="items hover hov3">
+                <h2 class="headline"><c>Databasing:</c> PostgreSQL</h2>
+                <span class="text">
+                    My database experience is limited to SQL with little experience in NoSQL. I'm' confident with data-handling applications 
+                    such as E-commerce, post and parcel, and accounts management
+                </span>
+            </li>
+            <li class="items hover hov4">
+                <h2 class="headline"><c>UI / UX:</c></h2>
+                <span class="text">
+                    UI / UX is among my capabilities as shown across some of my projects below. With experience in designing APIs and the 
+                    web-applications I've contributed to, I hope my attention to detail is conveyed when it comes to UX and usability
+                </span>
+            </li>
+            <li class="items hover hov5">
+                <h2 class="headline"><c>VBA Programming:</c> Excel | SolidWorks</h2>
+                <span class="text">
+                    During my time at LAC I've excelled at creating VBA macros for use in SolidWorks and Excel softwares. These scripts have brought
+                    automation to repetitive tasks saving hundreds of man hours and a vast sum of money. My excel macros can be adapted and scaled
+                    to suit FinTech or business management applications, get in touch to discuss
+                </span>
+            </li>
+        </ol>
+    </div>
+    </div>
+</div>
+
+<div id="case_study1" class="container-fluid">
+    <div class="fade-in">
+    <h1 class="container">Projects</h1>
+    <div class="container casestudy">
+        <h1>Warehouse Control System (WCS)</h1>
+        <div class="item" style="display: flex; flex-direction: row;">
+            <img class="img-responsive img1" src="images/exotec-logo.png" alt="Exotec Logo" style="width: 225px;">
+            <div style="padding-right: 4rem; padding-top: 5rem;">
+                <p> The objective is to deliver a new software application with an integrated Material Flow System.
+                    The development of such a system would eliminate the need for the client to rely on other WCS providers' product 
+                    and maintenance thus allowing more autonomy over their offering to potential clients. This is an ongoing development aiming
+                    for completion by fall 2023.</p>
+            </div>
+        </div>
+        <p style="color: #b8bec7; padding: 1.2rem; padding-left: 0;">// Tech Stack</p>
+        <ul style="display: flex; gap: 17px;">
+            <div class="stack">
+                <li class="techstack">Django</li>
+                <li class="techstack">Python</li>
+                <li class="techstack">PostgreSQL</li>
+                <li class="techstack">RabbitMQ</li>
+            </div>
+        </ul>
+        <p style="color: #b8bec7; padding: 1.2rem; padding-left: 0;">// Check it out</p>
+        <p>This project is either under an NDA or being used privately in the wild.</P> 
+        <p>Source code examples and demos can be shown upon request 👻</p>
+    </div>
+    </div>
+</div>
+
+<div id="case_study2" class="container-fluid">
+    <div class="fade-in">
+    <div class="container casestudy">
+        <h1>SolidWorks Design Automation</h1>
+        <div class="item" style="display: flex; flex-direction: row;">
+            <img class="img-responsive img2" src="images/VBA.jpg" alt="VBA Snippet" style="width: 500px;">
+            <div style="padding-right: 4rem; padding-top: 5rem;">
+                <p> Originally this project started as an idea for standardisation of the product catalogue.
+                    Through a series of iterative loops, a set of manufacturing drawings act as a template for the products whilst
+                    the API makes changes to the content and exports the relevant data into excel and PDF documents.</P>
+                <p> During the process I use the API's native behaviour to dynamically generate new configurations to populate the 'templates'.
+                    The process repeats hundreds of times automatically in the background of the PC resulting in a standard range of products 
+                    with the relevant documentation and technical drawings.</p>
+            </div>
+        </div>
+        <p style="color: #b8bec7; padding: 1.2rem; padding-left: 0;">// Tech Stack</p>
+        <ul style="display: flex; gap: 17px;">
+            <li class="techstack">VBA</li>
+            <li class="techstack">Python</li>
+        </ul>
+        <p style="color: #b8bec7; padding: 1.2rem; padding-left: 0;">// Check it out</p>
+        <a href="https://github.com/C-Yates/SolidWorks-Design-Automation" target="_blank" class="code"><p>Source code🔗</p></a>
+    </div>
+    </div>
+</div>
+
+<div id="case_study3" class="container-fluid">
+    <div class="fade-in">
+    <div class="container casestudy">
+        <h1>PageTurner</h1>
+        <div class="item" style="display: flex; flex-direction: row;">
+            <img class="img-responsive img3" src="images/PageTurner.png" alt="PageTurner" style="width: 300px; border: 1px solid #E5CCFF;">
+            <div style="padding-right: 4rem; padding-top: 5rem;">
+                <p> This project was setup to allow me to learn the functionality and processes of Django due to lack of experience with the framework.
+                    I created custom models to add data to my remote SQL database (Postrgres) then utilised python to manipulate and display the data 
+                    to the user in various forms.
+                    The site includes user authentication to add data to the database and an admin login, for site and data management.</p>
+            </div>
+        </div>
+        <p style="color: #b8bec7; padding: 1.2rem; padding-left: 0;">// Tech Stack</p>
+        <ul style="display: flex; gap: 17px;">
+            <div class="stack">
+                <li class="techstack">Django</li>
+                <li class="techstack">Python</li>
+                <li class="techstack">PostgreSQL</li>
+                <li class="techstack">HTML/CSS</li>
+                <li class="techstack">Bootstrap</li>
+            </div>
+        </ul>
+        <p style="color: #b8bec7; padding: 1.2rem; padding-left: 0;">// Check it out</p>
+        <a href="https://github.com/C-Yates/PageTurner" target="_blank" class="code"><p>Source code🔗</p></a>
+    </div>
+    </div>
+</div>
+
+<div id="case_study4" class="container-fluid">
+    <div class="fade-in">
+    <div class="container casestudy">
+        <h1>UI/UX & Improvements (Plexus)</h1>
+        <div class="item" style="display: flex; flex-direction: row;">
+            <img class="img-responsive img4" src="images/Plexus_bom2.jpg" alt="Plexus" style="width: 500px;">
+            <div style="padding-right: 4rem; padding-top: 5rem;">
+                <p>
+                    Plexus was already an established software application when I started LAC, I learned to use it 
+                    extensively from a user side before moving to maintenance and improvements of the software. The system runs on legacy versions
+                    of Django and Python meaning a more test-driven improvements approach must be taken.</p>
+                <p>
+                    I meet with LAC periodically to arrange implemnting new functionality as the businesses needs grow, making the UI/UX the best 
+                    it can be.</p>
+            </div>
+        </div>
+        <p style="color: #b8bec7; padding: 1.2rem; padding-left: 0;">// Tech Stack</p>
+        <ul style="display: flex; gap: 17px;">
+            <div class="stack">
+                <li class="techstack">Django</li>
+                <li class="techstack">Python</li>
+                <li class="techstack">JavaScript</li>
+                <li class="techstack">J.Query</li>
+                <li class="techstack">SQL</li>
+                <li class="techstack">HTML/CSS</li>
+                <li class="techstack">Bootstrap</li>
+            </div>
+        </ul>
+        <p style="color: #b8bec7; padding: 1.2rem; padding-left: 0;">// Check it out</p>
+        <p>This project is either under an NDA or being used privately in the wild.</P> 
+        <p>Source code examples and demos can be shown upon request 👻</p>
+    </div>
+    </div>
+</div>
+
+<div id="case_study5" class="container-fluid">
+    <div class="fade-in">
+    <div class="container casestudy">
+        <h1>Portfolio</h1>
+        <div class="item" style="display: flex; flex-direction: row;">
+            <img class="img-responsive img5" src="images/Portfolio.png" alt="Portfolio" style="width: 450px; border: 1px solid #b8bec7;">
+            <div style="padding-right: 4rem; padding-top: 5rem;">
+                <p> By far my most creative solo project; the portfolio you're viewing now was a way to convey my abilities in programming in all
+                    aspects of software design. This was a great project to spend a weekend on compiling some of my best work and 
+                    showcasing my creative flare in web-design. The site runs on a free-to-use w3schools sub-domain allowing quick deployment
+                    and site management.</p>
+                <p> I hope to use this platform as a springboard into some freelance software work on the side as I work to grow both my 
+                    skills and client base.</p>
+            </div>
+        </div>
+        <p style="color: #b8bec7; padding: 1.2rem; padding-left: 0;">// Tech Stack</p>
+        <ul style="display: flex; gap: 17px;">
+            <div class="stack">
+                <li class="techstack">HTML/CSS</li>
+                <li class="techstack">JavaScript</li>
+                <li class="techstack">Bootstrap</li>
+            </div>
+        </ul>
+        <p style="color: #b8bec7; padding: 1.2rem; padding-left: 0;">// Check it out</p>
+        <a href="https://github.com/C-Yates/Portfolio" target="_blank" class="code"><p>Source code🔗</p></a>
+    </div>
+    </div>
+</div>
+
+<div id="contact" class="container-fluid">
+    <div class="fade-in">
+    <div class="container contact">
+        <h1>Contact</h1>
+        <div style="font-family: var(--font-head);">
+            <h3>Wanna chat? 🤖</h3>
+            <div>
+                <a href="mailto:yates.chrisl99@gmail.com?subject=Mail from our Website" class="mail head"><d>📭 Click here</d></a>
+            </div>
+            <div>
+                <p style="margin-top: 12px;">Drop me an email or find me online.</p>
+                <h4 style="margin-top: 45px;">Some socials</h4>
+                <a href="https://www.linkedin.com/in/chris-y-6ab88b232/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://github.com/C-Yates" target="_blank" class="fa fa-github"></a>
+                <a href="https://www.instagram.com/chrisyates__/" target="_blank" class="fa fa-instagram"></a>
+                <p class="cr" style="margin-top: 70px; margin-left: 7px; text-align: center;">"The best way to predict the future is to invent it."<c> - Alan Kay</c></p>
+                <p class="cr" style="margin-top: 10px; text-align: center;">© 2023 Chris Yates. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</main>
+</html>
