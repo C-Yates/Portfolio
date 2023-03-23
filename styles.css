@@ -1,0 +1,362 @@
+:root {
+    --bg: #fdfdfd;
+    --highlight1: #ff5757;
+    --highlight2: #fff1c6;
+    --color: #1a1e24;
+    --font-number: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+    --font-head: "Space Mono", Consolas, Menlo, Monaco, "Courier New", monospace;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.list {
+    list-style: none;
+    width: 900px;
+    max-width: 90%;
+}
+
+.items {
+    display: block;
+    clear: both;
+    counter-increment: list;
+    padding-bottom: 4rem;
+    font-size: 1.1rem;
+    line-height: 1.375;
+    position: relative;
+}
+
+.items:before {
+    font: bold 2.25rem/1 var(--font-number);
+    content: counter(list);
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin: 0 1.5rem 0.75rem 0;
+    color: var(--bg);
+    background: var(--highlight1) linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
+    text-shadow: 0 0 2px var(--highlight1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    shape-outside: ellipse();
+    z-index: 1;
+}
+
+.items:after {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: var(--highlight1);
+    z-index: -1;
+    border-top-left-radius: 3px;
+}
+
+.headline {
+    padding: 0rem 0 0 0;
+    margin: 0 0 1rem 0;
+    font: normal 2.3rem var(--font-head);
+}
+
+.hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 1;
+}
+.hov1:hover {background-color: #dcfcdd;}
+.hov2:hover {background-color: #fcf3dc;}
+.hov3:hover {background-color: #fcdcfc;}
+.hov4:hover {background-color: #fcdcdc;}
+.hov5:hover {background-color: #dcf1fc;}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 1.2s ease-out, transform 0.6s ease-out, visibility 1.2s ease-out;
+}
+.visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+html, body {
+    margin: 0 auto;
+    padding: 0;
+}
+.background {
+    position: static;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+.containers {
+    max-width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+c {
+    color: var(--highlight1)
+}
+
+.about {
+    margin-top:50px;
+    padding-bottom:50px;
+    width: auto;
+}
+.about .text {
+    font: 20px var(--font-head);
+    width: 33%;
+    line-height: 1.5;
+}
+
+.experience {
+    margin-top:50px;
+    padding-bottom:50px;
+}
+
+.contact {
+    margin-top:0px;
+    padding-bottom:50px;
+}
+.skills {
+    margin-top:50px;
+    padding-bottom:50px;
+}
+.skills .text {
+    font: 14px var(--font-head)
+}
+.casestudy {
+    margin-top:50px;
+    padding-bottom:50px;
+    font: 18px var(--font-head);
+}
+.techstack {
+    list-style-type: none;
+    text-align: center;
+    color: #ffff;
+    background-color: #000000;
+    border: 1px solid var(--highlight1);
+    border-radius: 10px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: fit-content;
+}
+.navbar-brand:hover{
+    color: var(--highlight1) !important
+}
+
+.fa {
+    padding: 20px;
+    font-size: 28px !important;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+} 
+
+.fa-linkedin {
+    background: white;
+    color: black;
+}
+.fa-instagram {
+    background: white;
+    color: black;
+}
+.fa-github {
+    background: white;
+    color: black;
+}
+.fa-linkedin:hover, .fa-linkedin:link {
+    text-decoration: none;
+    background: #007bb5;
+    color: #fff
+}
+.fa-instagram:hover, .fa-instagram:link {
+    text-decoration: none;
+    background: #e1306c;
+    color: #fff
+}
+.fa-github:hover, .fa-github:link {
+    text-decoration: none;
+    background: #333333;
+    color: #fff
+}
+.head {
+    font-family: Lobster;
+}
+.mail:link {
+    color: white;
+    font-size: 28px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.mail:hover:before, .mail:active {
+    color: var(--highlight1);
+    content: "📬 Click here";
+}
+.mail:hover d{
+    display: none;
+}
+.code:link {
+    text-decoration: none;
+    color: black;
+}
+.code:hover, .code:active {
+    text-decoration: none;
+    color: var(--highlight1);
+}
+
+@media only screen and (max-width: 400px) {
+    /* For mobile: */
+    .containers h2 {
+        top: 300px !important;
+    }
+    .img1 {
+        width: 75vw !important;
+        height: 70vw !important;
+    }
+    .img2 {
+        width: 75vw !important;
+        height: 180px !important;
+    }
+    .img3 {
+        width: 75vw !important;
+        height: 85VW !important;
+    }
+    .img4 {
+        width: 75vw !important;
+        height: 155px !important;
+    }
+    .img5 {
+        width: 75vw !important;
+        height: 155px !important;
+    }
+    .item {
+        flex-direction: column !important;
+    }
+    .stack li {
+        flex: auto !important;
+        margin-top: 5px !important;
+    }
+    .about .text {
+        font-size: 13px;
+        width: 75vw;
+    }
+    .casestudy {
+        font: 13px var(--font-head);
+    }
+    .list, .items .text {
+        font-size: 13px;
+    }
+    .headline {
+        font-size: 15px;
+    }
+    .fa {
+        font-size: 16px !important;
+    }
+    .cr {
+        font-size: 10px;
+    }
+    .containers {
+        top: 50% !important;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .containers h2 {
+        top: 300px !important;
+    }
+    .about .text {
+        font-size: 18px;
+        width: 75vw;
+    }
+    .stack li {
+        flex: auto !important;
+        margin-top: 5px !important;
+    }
+    .img1 {
+        width: 70vw !important;
+        height: 25VW !important;
+    }
+    .img2 {
+        width: 70vw !important;
+        height: 150px !important;
+    }
+    .img3 {
+        width: 75vw !important;
+        height: 260px !important;
+    }
+    .img4 {
+        width: 70vw !important;
+        height: 125px !important;
+    }
+    .img5 {
+        width: 75vw !important;
+        height: 155px !important;
+    }
+    .casestudy .item div, .casestudy .item p {
+        width: fit-content !important;
+        padding-top: 0 !important;
+        padding-left: 2rem !important;
+        font-size: 15px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .about .text {
+        width: 900px;
+    }
+    .img1 {
+        width: 50vw !important;
+        height: 320px !important;
+    }
+    .img2 {
+        width: 75vw !important;
+        height: 285px !important;
+    }
+    .img3 {
+        width: 25vw !important;
+        height: 285px !important;
+    }
+    .img4 {
+        width: 75vw !important;
+        height: 285px !important;
+    }
+    .img5 {
+        width: 75vw !important;
+        height: 285px !important;
+    }
+    .casestudy {
+        font: 19px var(--font-head) !important;
+    }
+    .casestudy .item div, .casestudy .item p {
+        padding-top: 1.5rem !important;
+        padding-right: 6rem !important;
+        font-size: 19px !important;
+    }
+    .stack li {
+        display: inline !important;
+    }
+}
