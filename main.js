@@ -29,7 +29,7 @@
         var particles = Particles.init({
             selector: '.background',
             color: ['#DA0463', '#ff5757'],
-            maxParticles: '100',
+            maxParticles: '150',
             connectParticles: 'true',
 
             responsive: [
